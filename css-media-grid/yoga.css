@@ -143,7 +143,7 @@ section > p {
 }
 
 /* 3p. */
-/* footer {
+ footer {
     background-color: #573A56;
     font-size: 0.7em;
     text-align: center;
@@ -153,15 +153,15 @@ section > p {
 }
 
 /* 3q. */
-/* footer a:link {
+footer a:link {
     color: #fff9e9;
 
-} */
+} 
 /* 3r. */
-/* footer a:hover {
+ footer a:hover {
     color: #e8fff9;
 
-} */ 
+} 
 
 /* 3s. */
 .benefits-list {
@@ -178,5 +178,62 @@ figure {
 img {
     width: 100%;
     height: auto;
+
+}
+
+
+#hamburger {
+    display: none;
+}
+
+@media only screen and (max-width:760px){
+
+    header h1 {
+        display:inline-block;
+        line-height: 50%;
+    }
+
+    #hamburger {
+        display: block;
+        float: right;
+        padding: 12px;
+        height: 55%;
+        background-color:#e1dbe1;
+    }
+
+    header {
+        height: 55px;
+    }
+
+    .nav {
+        display: block;
+        padding: 10px;
+        width: 70%;
+        font-size: small;
+    }
+
+    #wrapper {
+        position: relative;
+    }
+
+    #mainNav {
+        position: absolute;
+        z-index: 1;
+        right: 10px;
+        top: 20px;
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    .service {
+        width: 95%
+    }
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
 
 }
